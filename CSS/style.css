@@ -1,0 +1,261 @@
+/***********************/
+/* HERO and NAVIGATION */
+/***********************/
+
+/* HEADER + NAVIGATION */
+
+.header {
+  /* border: 2px solid orangered; */
+  height: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  margin-left: 2.4em;
+}
+
+.main-nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  gap: 1.2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* border: 2px solid burlywood; */
+  margin-right: 3.2rem;
+}
+
+.main-nav-link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-inline: 1.8rem;
+  color: #fff;
+  padding-block: 0.8rem;
+}
+
+.main-nav .btn-fill {
+  padding-inline: 1.6rem;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+
+.main-nav-link:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* HERO SECTION */
+
+.section-hero {
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(50deg, #2a12b3, rgba(88, 208, 231, 0.9));
+  margin-bottom: 8rem;
+
+  position: relative;
+}
+
+.hero-container {
+  max-width: 130rem;
+  /* border: 3px solid red; */
+  margin: 0 auto;
+  padding: 3.2rem;
+  padding-top: 4.8rem;
+
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.hero-text {
+  /* border: 3px solid greenyellow; */
+  padding-block: 1.2rem;
+  padding-inline: 2.4rem;
+
+  position: relative;
+}
+
+.heading-primary {
+  font-size: 7.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.hero-para {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 4.8rem;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding-block: 1.2rem;
+  padding-inline: 2.4rem;
+  border: none;
+  border-radius: 11px;
+  margin-bottom: 3.2rem;
+  cursor: pointer;
+  transition: all 300ms cubic bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.btn-fill {
+  background-color: #1fca74;
+  color: #ffffff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-fill:hover,
+.btn-fill:active {
+  background-color: #35cf82;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #ab4c33;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.line {
+  width: 15%;
+  background-color: #fff;
+  height: 1px;
+  position: absolute;
+  top: -14%;
+  left: 5%;
+}
+
+/* HERO-BOTTOM */
+
+.hero-bottom {
+  width: 50rem;
+  height: 12rem;
+  background-color: #ffffff;
+  border-radius: 24px;
+  position: absolute;
+  bottom: -6%;
+  right: 3%;
+  padding: 1.6rem 0 0 1.6rem;
+  align-items: flex-start;
+
+  display: flex;
+  gap: 1.2rem;
+}
+
+.circle {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  background-color: #ffcdcd;
+  padding: 0.4rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem;
+  justify-items: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.small-circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: rgba(188, 101, 101, 0.65);
+}
+
+.sm-1 {
+  position: absolute;
+  top: 15%;
+  right: 40%;
+}
+
+.sm-2 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.sm-3 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.bottom-text {
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.arrow-sign span {
+  display: inline-block;
+  font-size: 3.2rem;
+  padding-inline: 1.6rem;
+}
+
+/*************************/
+/* MIDDLE SECTION (CHAT) */
+/*************************/
+
+.section-chat {
+  margin-bottom: 8rem;
+}
+
+.chat-container {
+  width: 85%;
+  border: 2px solid fuchsia;
+  margin: 0 auto;
+}
+
+.heading-secondary {
+  font-size: 5.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  letter-spacing: -1%;
+}
+
+.chat-description {
+  font-size: 1.6rem;
+  color: rgba(42, 55, 64, 0.35);
+  /* border: 1px solid gold; */
+  line-height: 1.3;
+
+  width: 40%;
+  margin: 0 auto;
+
+  margin-bottom: 3.2rem;
+}
+
+.chat-img-container img {
+  width: 100%;
+}
