@@ -329,6 +329,7 @@
   /* border: 2px solid lawngreen; */
   padding-inline: 2.4rem;
 
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
@@ -363,13 +364,26 @@
   text-decoration: none;
 }
 
+.footer-link:hover,
+.footer-link:active {
+  color: #005eff;
+  text-decoration: underline;
+}
+
 /* COPYRIGHT */
 
 .copyright-container {
   /* border: 2px solid chocolate; */
 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 0.8rem;
 }
@@ -383,7 +397,12 @@
 }
 
 .icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 1.6rem;
 }
